@@ -1,7 +1,269 @@
 <!DOCTYPE html>
 <html lang="es">
 <head><!DOCTYPE html>
+<html lang="es"><!-- sonalma.boho - estructura completa de páginas -->
+
+<!-- ========== index.html ========== -->
+<!DOCTYPE html>
 <html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sonalma.boho</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <h1 class="logo">sonalma.boho</h1>
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="llaveros.html">Llaveros</a>
+    <a href="peques.html">Para los peques</a>
+    <a href="regalos.html">Regalos</a>
+    <a href="tapices.html">Tapices</a>
+    <a href="carrito.html" class="cart-btn">🧺 Carrito</a>
+  </nav>
+</header>
+<section class="hero">
+  <div class="hero-text">
+    <h2>Artesanía en macramé</h2>
+    <p>Hecho a mano, con alma y estilo boho.</p>
+  </div>
+</section>
+<footer>© 2025 sonalma.boho — Artesanía hecha a mano</footer>
+<a class="whatsapp" href="https://wa.me/34649544756">💬</a>
+</body>
+</html>
+
+
+<!-- ========== llaveros.html ========== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Llaveros — sonalma.boho</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <h1 class="logo">Llaveros</h1>
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+  </nav>
+</header>
+<section class="product-grid">
+  <div class="product-card">
+    <img src="20251117_130613.jpg" alt="Llaveros Sirena">
+    <h3>Llaveros Sirena</h3>
+    <p class="price">6€</p>
+    <button onclick="addToCart('Llaveros Sirena', 6)">Añadir</button>
+  </div>
+  <div class="product-card">
+    <img src="20251117_130735.jpg" alt="Llaveros Flor">
+    <h3>Llaveros Flor</h3>
+    <p class="price">3€</p>
+    <button onclick="addToCart('Llaveros Flor', 3)">Añadir</button>
+  </div>
+  <div class="product-card">
+    <img src="20251129_133941.jpg" alt="Llaveros Rizados">
+    <h3>Llaveros Rizados</h3>
+    <p class="price">5€</p>
+    <button onclick="addToCart('Llaveros Rizados', 5)">Añadir</button>
+  </div>
+</section>
+<a class="whatsapp" href="https://wa.me/34649544756">💬</a>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- ========== peques.html ========== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peques — sonalma.boho</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <h1 class="logo">Para los peques</h1>
+  <nav class="nav"><a href="index.html">Inicio</a></nav>
+</header>
+<section class="product-grid">
+  <p class="info">Pronto añadiré los productos de esta categoría.</p>
+</section>
+</body>
+</html>
+
+
+<!-- ========== regalos.html ========== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regalos — sonalma.boho</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <h1 class="logo">Regalos</h1>
+  <nav class="nav"><a href="index.html">Inicio</a></nav>
+</header>
+<section class="product-grid">
+  <p class="info">Muy pronto regalos artesanales disponibles.</p>
+</section>
+</body>
+</html>
+
+
+<!-- ========== tapices.html ========== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tapices — sonalma.boho</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <h1 class="logo">Tapices</h1>
+  <nav class="nav"><a href="index.html">Inicio</a></nav>
+</header>
+<section class="product-grid">
+  <p class="info">Los tapices se añadirán próximamente.</p>
+</section>
+</body>
+</html>
+
+
+<!-- ========== carrito.html ========== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito — sonalma.boho</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <h1 class="logo">Carrito</h1>
+  <nav class="nav"><a href="index.html">Inicio</a></nav>
+</header>
+<section id="cart-items" class="cart-list"></section>
+<a id="whatsappOrder" class="whatsapp" href="#">Enviar pedido</a>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- ========== style.css ========== -->
+/* Fondo textura lino */
+body {
+  background: #f3f0eb url('lino-textura.jpg') repeat;
+  background-size: 600px;
+  font-family: 'Poppins', sans-serif;
+  color: #4a3d33;
+  margin: 0;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #d3c4b5;
+}
+.logo {
+  font-size: 36px;
+  font-weight: 600;
+  color: #7a5c4b;
+}
+.nav a {
+  margin: 0 10px;
+  color: #7a5c4b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  background: url('portada.jpg') center/cover no-repeat;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-text h2 {
+  font-size: 40px;
+  margin: 0;
+  color: #6a4a3a;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.product-card {
+  background: #ffffffcc;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.product-card img { width: 100%; border-radius: 10px; }
+.price { font-weight: 600; color: #553726; }
+button {
+  background: #7a5c4b;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* WhatsApp */
+.whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25D366;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+
+<!-- ========== script.js ========== -->
+let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+
+function addToCart(name, price) {
+  cart.push({name: name, price: price});
+  localStorage.setItem('cart', JSON.stringify(cart));
+  alert('Producto añadido al carrito');
+}
+
+function loadCart() {
+  const cont = document.getElementById('cart-items');
+  if (!cont) return;
+  cont.innerHTML = cart.map(i => `<p>${i.name} - ${i.price}€</p>`).join('');
+
+  const msg = cart.map(i => `${i.name} - ${i.price}€`).join(', ');
+  document.getElementById('whatsappOrder').href = `https://wa.me/34649544756?text=Pedido:%20${msg}`;
+}
+
+loadCart();
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
