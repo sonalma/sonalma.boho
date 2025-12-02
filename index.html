@@ -1,6 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
+<head><!DOCTYPE html>
+<html lang="es">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>sonalma.boho</title>
+
+<style>
+body{
+  background:#3b2f2f;
+  color:#d0c2b3;
+  font-family:Arial;
+  padding:0;
+  margin:0;
+}
+
+/* ----- BARRA SUPERIOR ----- */
+nav{
+  background:#2b2323;
+  padding:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h1{
+  margin:0;
+  color:#a97458;
+}
+
+/* ----- MENÚ DESPLEGABLE ----- */
+.menu{
+  position:relative;
+  display:inline-block;
+}
+
+.menu button{
+  background:#a97458;
+  color:white;
+  padding:10px 18px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.menu-content{
+  display:none;
+  position:absolute;
+  background:#4a3b3b;
+  min-width:160px;
+  border-radius:8px;
+  overflow:hidden;
+  z-index:1;
+}
+
+.menu-content a{
+  color:#d0c2b3;
+  padding:12px 16px;
+  text-decoration:none;
+  display:block;
+}
+
+.menu-content a:hover{
+  background:#5a4747;
+}
+
+/* mostrar desplegable */
+.menu:hover .menu-content{
+  display:block;
+}
+
+/* ----- GALERÍA ----- */
+.gallery{
+  padding:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:16px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:12px;
+}
+
+/* ----- WHATSAPP FIXED ----- */
+.whatsapp{
+  position:fixed;
+  bottom:24px;
+  right:24px;
+  background:#25D366;
+  color:white;
+  padding:14px 18px;
+  border-radius:50%;
+  font-size:22px;
+  text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>sonalma.boho</h1>
+
+  <div class="menu">
+    <button>Categorías ▾</button>
+    <div class="menu-content">
+      <a href="#peques">Para los peques</a>
+      <a href="#llaveros">Llaveros</a>
+      <a href="#regalos">Regalos</a>
+      <a href="#tapices">Tapices</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ====== SECCIÓN PEQUES ====== -->
+<h2 id="peques" style="padding-left:20px;color:#a97458;">Para los peques</h2>
+<div class="gallery">
+  <img src="20251129_134528.jpg">
+  <img src="20251117_130613.jpg">
+</div>
+
+<!-- ====== SECCIÓN LLAVEROS ====== -->
+<h2 id="llaveros" style="padding-left:20px;color:#a97458;">Llaveros</h2>
+<div class="gallery">
+  <img src="20251129_133941.jpg">
+</div>
+
+<!-- ====== SECCIÓN REGALOS ====== -->
+<h2 id="regalos" style="padding-left:20px;color:#a97458;">Regalos</h2>
+<div class="gallery">
+  <img src="20251129_134042.jpg">
+</div>
+
+<!-- ====== SECCIÓN TAPICES ====== -->
+<h2 id="tapices" style="padding-left:20px;color:#a97458;">Tapices</h2>
+<div class="gallery">
+  <img src="20251129_134245.jpg">
+  <img src="20251117_130735.jpg">
+</div>
+
+<a class="whatsapp" href="https://wa.me/34649544756">💬</a>
+
+</body>
+</html>
+
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>sonalma.boho</title>
 <style>
